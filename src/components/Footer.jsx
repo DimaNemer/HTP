@@ -162,13 +162,50 @@ export default function Footer() {
       </div>
 
       {/* ── Bottom bar ── */}
-      <div className="border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 py-5 flex items-center justify-center text-xs text-white/35">
-          <p>
-            &copy; {new Date().getFullYear()} HTP Cybersecurity Consultancy. All rights reserved.
-          </p>
-        </div>
-      </div>
+ {/* ── Bottom bar ── */}
+<div className="border-t border-white/10">
+  <div className="max-w-7xl mx-auto px-6 md:px-12 py-5 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-white/35">
+
+    {/* Copyright */}
+    <p>
+      &copy; {new Date().getFullYear()} HTP Cybersecurity Consultancy. All rights reserved.
+    </p>
+
+    {/* Legal Links */}
+    <div className="flex items-center gap-4">
+      <Link
+        href="/privacy"
+        className="hover:text-white transition-colors"
+      >
+        Privacy Policy
+      </Link>
+
+      <span className="opacity-30">|</span>
+
+      <Link
+        href="/terms"
+        className="hover:text-white transition-colors"
+      >
+        Terms & Conditions
+      </Link>
+
+        <span className="opacity-30">|</span>
+<Link
+  href="#"
+  onClick={(e) => {
+    e.preventDefault();
+    window.dispatchEvent(new Event("open-cookie-banner"));
+  }}
+  className="hover:text-white transition-colors"
+>
+  Cookies
+</Link>
+     
+
+    </div>
+
+  </div>
+</div>
 
     </footer>
   );

@@ -1,288 +1,3 @@
-// "use client";
-
-// import { useState } from "react";
-// import { Mail, Phone, MapPin, Linkedin, Send, CheckCircle } from "lucide-react";
-// import Link from "next/link";
-// import Image from "next/image";
-
-// export default function ContactPage() {
-//   const [formData, setFormData] = useState({
-//     firstName: "",
-//     lastName: "",
-//     email: "",
-//     company: "",
-//     message: "",
-//   });
-
-//   const [status, setStatus] = useState("idle");
-
-//   const handleChange = (e) => {
-//     setFormData({ ...formData, [e.target.name]: e.target.value });
-//   };
-
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     setStatus("submitting");
-//     setTimeout(() => {
-//       setStatus("success");
-//       setFormData({
-//         firstName: "",
-//         lastName: "",
-//         email: "",
-//         company: "",
-//         message: "",
-//       });
-//       setTimeout(() => setStatus("idle"), 5000);
-//     }, 1200);
-//   };
-
-//   return (
-//     <main className="min-h-screen bg-background">
-
-//       {/* ── Hero Section ───────────────────────────────────────────── */}
-//       <section className="relative min-h-[100vh] flex items-end overflow-hidden">
-//         {/* Background image */}
-//         <img
-//           src="/contact.jpg"
-//           alt="HTP Consultancy contact"
-//           className="absolute inset-0 w-full h-full object-cover object-center"
-//         />
-
-//         {/* Strong overlay so text is always readable */}
-//         <div className="absolute inset-0 bg-primary/72" />
-
-//         {/* Soft accent gradient */}
-//         <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-transparent to-transparent" />
-
-//         {/* Fade to white at bottom for smooth transition into form section */}
-//         <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-b from-transparent to-background" />
-
-//         {/* Hero text */}
-//         <div className="relative z-10 w-full pb-28 pt-40 px-6 md:px-12 text-center">
-//           <div className="max-w-3xl mx-auto">
-
-
-//             <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
-//               Let's <span className="text-white underline decoration-accent decoration-4 underline-offset-4">Connect</span>
-//             </h1>
-//             <p className="text-lg md:text-xl text-white leading-relaxed max-w-2xl mx-auto">
-//               Whether you're looking to protect your business or explore new opportunities, our team is ready to help.
-//             </p>
-
-//             <div className="mt-10">
-//               <a
-//                 href="#contact-form"
-//                 className="inline-flex items-center justify-center gap-2 rounded-xl bg-cta hover:bg-ctaHover active:bg-[#C91F00] px-8 py-4 text-base font-semibold text-white shadow-[0_4px_14px_rgba(255,42,0,0.25)] hover:shadow-[0_8px_24px_rgba(255,42,0,0.35)] hover:-translate-y-0.5 transition-all duration-300"
-//               >
-//                 Get In Touch
-//               </a>
-//             </div>
-//           </div>
-//         </div>
-//       </section>
-
-//       {/* ── Contact Info + Form ─────────────────────────────────────── */}
-//       <section className="pt-11 pb-24">
-//         <div className="container mx-auto px-6 md:px-12">
-//           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-14 lg:gap-16 items-start">
-
-//             {/* ── Left: Info ───────────────────────────────────────── */}
-//             <div className="lg:col-span-5 flex flex-col gap-8">
-//               <div>
-//                 <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-4">
-//                   Contact <span className="text-htpRed">Us</span>
-//                 </h2>
-//                 <p className="text-textMain text-base leading-relaxed max-w-md">
-//                   A better future is possible. Contact us to learn more about our mission and work, or to become involved yourself.
-//                 </p>
-//               </div>
-
-//               {/* Contact details */}
-//               <div className="space-y-5">
-//                 <div className="flex items-start gap-4">
-//                   <div className="p-3 bg-accent/10 border border-accent/20 rounded-xl text-accent flex-shrink-0">
-//                     <Phone className="w-5 h-5 text-htpRed" />
-//                   </div>
-//                   <div>
-//                     <h3 className="text-xs font-bold text-textMuted uppercase tracking-wider mb-1">Phone</h3>
-//                     <a href="tel:+447966520303" className="text-primary font-medium hover:text-accent transition-colors">
-//                       +44 7966 520303
-//                     </a>
-//                   </div>
-//                 </div>
-
-//                 <div className="flex items-start gap-4">
-//                   <div className="p-3 bg-accent/10 border border-accent/20 rounded-xl text-accent flex-shrink-0">
-//                     <Mail className="w-5 h-5 text-htpRed" />
-//                   </div>
-//                   <div>
-//                     <h3 className="text-xs font-bold text-textMuted uppercase tracking-wider mb-1">Email</h3>
-//                     <a href="mailto:hc@htpconsultancy.com" className="text-primary font-medium hover:text-accent transition-colors">
-//                       hc@htpconsultancy.com
-//                     </a>
-//                   </div>
-//                 </div>
-
-//                 <div className="flex items-start gap-4">
-//                   <div className="p-3 bg-accent/10 border border-accent/20 rounded-xl text-accent flex-shrink-0">
-//                     <MapPin className="w-5 h-5 text-htpRed" />
-//                   </div>
-//                   <div>
-//                     <h3 className="text-xs font-bold text-textMuted uppercase tracking-wider mb-1">Location</h3>
-//                     <p className="text-primary font-medium">London, UK</p>
-//                   </div>
-//                 </div>
-//               </div>
-
-//               {/* LinkedIn */}
-//               <div>
-//                 <h3 className="text-xs font-bold text-textMuted uppercase tracking-wider mb-4">Connect With Us</h3>
-//                 <Link
-//                   href="https://www.linkedin.com/company/htp-consultancy/"
-//                   target="_blank"
-//                   className="inline-flex items-center gap-3 p-4 bg-white hover:bg-secondary border border-borderLight rounded-xl text-primary hover:text-accent transition-all duration-300 group w-fit shadow-sm"
-//                 >
-//                   <div className="p-2 bg-accent/10 rounded-lg group-hover:bg-accent/20 transition-colors">
-//                     <Linkedin className="w-5 h-5 text-htpRed" />
-//                   </div>
-//                   <span className="font-semibold text-sm pr-1">HTP Consultancy</span>
-//                 </Link>
-//               </div>
-
-//               {/* Trust badge */}
-//               <div className="p-6 bg-secondary rounded-2xl border border-borderLight">
-//                 <div className="flex items-start gap-3">
-//                   <CheckCircle className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-//                   <div>
-//                     <p className="text-primary font-semibold text-sm mb-1">Free 1-Hour Consultation</p>
-//                     <p className="text-textMuted text-xs leading-relaxed">
-//                       We offer a complimentary 1-hour session to understand your needs and define your goals — no commitment required.
-//                     </p>
-//                   </div>
-//                 </div>
-//               </div>
-//             </div>
-
-//             {/* ── Right: Form ──────────────────────────────────────── */}
-//             <div
-//               id="contact-form"
-//               className="lg:col-span-7 scroll-mt-32 bg-white p-8 md:p-10 lg:p-12 rounded-2xl shadow-sm border border-borderLight"
-//             >
-//               <h2 className="text-2xl font-bold text-primary mb-2">Send Us a Message</h2>
-//               <p className="text-textMuted text-sm mb-8">We'll get back to you within one business day.</p>
-
-//               <form onSubmit={handleSubmit} className="space-y-5">
-//                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-//                   <div className="space-y-2">
-//                     <label htmlFor="firstName" className="block text-sm font-semibold text-primary">
-//                       First Name <span className="text-accent">*</span>
-//                     </label>
-//                     <input
-//                       type="text"
-//                       id="firstName"
-//                       name="firstName"
-//                       required
-//                       value={formData.firstName}
-//                       onChange={handleChange}
-//                       className="w-full bg-background border border-borderLight rounded-xl px-4 py-3.5 text-primary placeholder:text-textMuted focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition-all text-sm"
-//                       placeholder="John"
-//                     />
-//                   </div>
-//                   <div className="space-y-2">
-//                     <label htmlFor="lastName" className="block text-sm font-semibold text-primary">
-//                       Last Name <span className="text-accent">*</span>
-//                     </label>
-//                     <input
-//                       type="text"
-//                       id="lastName"
-//                       name="lastName"
-//                       required
-//                       value={formData.lastName}
-//                       onChange={handleChange}
-//                       className="w-full bg-background border border-borderLight rounded-xl px-4 py-3.5 text-primary placeholder:text-textMuted focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition-all text-sm"
-//                       placeholder="Doe"
-//                     />
-//                   </div>
-//                 </div>
-
-//                 <div className="space-y-2">
-//                   <label htmlFor="email" className="block text-sm font-semibold text-primary">
-//                     Email Address <span className="text-accent">*</span>
-//                   </label>
-//                   <input
-//                     type="email"
-//                     id="email"
-//                     name="email"
-//                     required
-//                     value={formData.email}
-//                     onChange={handleChange}
-//                     className="w-full bg-background border border-borderLight rounded-xl px-4 py-3.5 text-primary placeholder:text-textMuted focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition-all text-sm"
-//                     placeholder="john@company.com"
-//                   />
-//                 </div>
-
-//                 <div className="space-y-2">
-//                   <label htmlFor="company" className="block text-sm font-semibold text-primary">
-//                     Company / Industry <span className="text-accent">*</span>
-//                   </label>
-//                   <input
-//                     type="text"
-//                     id="company"
-//                     name="company"
-//                     required
-//                     value={formData.company}
-//                     onChange={handleChange}
-//                     className="w-full bg-background border border-borderLight rounded-xl px-4 py-3.5 text-primary placeholder:text-textMuted focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition-all text-sm"
-//                     placeholder="Acme Corp"
-//                   />
-//                 </div>
-
-//                 <div className="space-y-2">
-//                   <label htmlFor="message" className="block text-sm font-semibold text-primary">
-//                     Message
-//                   </label>
-//                   <textarea
-//                     id="message"
-//                     name="message"
-//                     rows={5}
-//                     value={formData.message}
-//                     onChange={handleChange}
-//                     className="w-full bg-background border border-borderLight rounded-xl px-4 py-3.5 text-primary placeholder:text-textMuted focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition-all resize-y text-sm"
-//                     placeholder="How can we help you?"
-//                   />
-//                 </div>
-
-//                 <div className="pt-2">
-//                   <button
-//                     type="submit"
-//                     disabled={status === "submitting"}
-//                     className={`w-full flex items-center justify-center gap-3 py-4 px-6 rounded-xl font-bold text-base transition-all duration-300 ${
-//                       status === "success"
-//                         ? "bg-emerald-50 text-emerald-600 border border-emerald-200"
-//                         : "bg-cta hover:bg-ctaHover active:bg-[#C91F00] text-white shadow-[0_4px_14px_rgba(255,42,0,0.25)] hover:shadow-[0_8px_24px_rgba(255,42,0,0.35)] hover:-translate-y-0.5"
-//                     }`}
-//                   >
-//                     {status === "submitting" ? (
-//                       <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-//                     ) : status === "success" ? (
-//                       <>
-//                         <CheckCircle className="w-5 h-5 text-emerald-500" /> Message Sent Successfully!
-//                       </>
-//                     ) : (
-//                       <>
-//                         Send Message <Send className="w-5 h-5" />
-//                       </>
-//                     )}
-//                   </button>
-//                 </div>
-//               </form>
-//             </div>
-//           </div>
-//         </div>
-//       </section>
-//     </main>
-//   );
-// }
 
 "use client";
 
@@ -354,10 +69,21 @@ function ContactForm() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("submitting");
-    setTimeout(() => {
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send message');
+      }
+
       setStatus("success");
       setFormData({
         firstName: "",
@@ -369,7 +95,12 @@ function ContactForm() {
         message: "",
       });
       setTimeout(() => setStatus("idle"), 5000);
-    }, 1200);
+    } catch (error) {
+      console.error(error);
+      setStatus("error"); // you can safely set it mapped to 'idle' later if you don't have visual error logic
+      setTimeout(() => setStatus("idle"), 5000);
+      alert("Failed to send your message. Please try again or email us directly.");
+    }
   };
 
   const showMultiPicker = formData.service === "Multiple Services";
@@ -581,38 +312,38 @@ export default function ContactPage() {
     <main className="min-h-screen bg-[#FFFFFF]">
 
       {/* ── Hero ── */}
-    <section className="relative min-h-[82vh] sm:min-h-[90vh] md:min-h-screen flex items-end overflow-hidden">
+  <section className="relative min-h-[82vh] sm:min-h-[90vh] md:min-h-screen flex items-end overflow-hidden">
   <img
     src="/contact.jpg"
     alt="HTP Consultancy contact"
-    className="absolute inset-0 w-full h-full object-cover object-[62%_center] sm:object-[58%_center] md:object-center"
+    className="absolute inset-0 w-full h-full object-cover object-[52%_center] xs:object-[54%_center] sm:object-[56%_center] md:object-[58%_center] lg:object-center"
   />
-        <div className="absolute inset-0 bg-[#0B1F3A]/72" />
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0A4F6E]/10 via-transparent to-transparent" />
-        <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-b from-transparent to-[#FFFFFF]" />
+  <div className="absolute inset-0 bg-[#0B1F3A]/72" />
+  <div className="absolute inset-0 bg-gradient-to-br from-[#0A4F6E]/10 via-transparent to-transparent" />
+  <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-b from-transparent to-[#FFFFFF]" />
 
-      <div className="relative z-10 w-full pb-28 pt-32 md:pt-40 px-6 md:px-12 text-center">
-          <div className="max-w-3xl mx-auto">
-           <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
-              Let's{" "}
-              <span className="text-white underline decoration-[#FF2A00] decoration-4 underline-offset-4">
-                Connect
-              </span>
-            </h1>
-           <p className="text-base sm:text-lg md:text-xl text-white leading-relaxed max-w-2xl mx-auto">
-              Whether you're looking to protect your business or explore new opportunities, our team is ready to help.
-            </p>
-            <div className="mt-10">
-              <a
-                href="#contact-form"
-            className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#FF2A00] hover:bg-[#E02400] active:bg-[#C91F00] px-7 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-semibold text-white shadow-[0_4px_14px_rgba(255,42,0,0.25)] hover:shadow-[0_8px_24px_rgba(255,42,0,0.35)] hover:-translate-y-0.5 transition-all duration-300"
-              >
-                Get In Touch
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+  <div className="relative z-10 w-full pb-28 pt-32 md:pt-40 px-6 md:px-12 text-center">
+    <div className="max-w-3xl mx-auto">
+      <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
+        Let's{" "}
+        <span className="text-white underline decoration-[#FF2A00] decoration-4 underline-offset-4">
+          Connect
+        </span>
+      </h1>
+      <p className="text-base sm:text-lg md:text-xl text-white leading-relaxed max-w-2xl mx-auto">
+        Whether you're looking to protect your business or explore new opportunities, our team is ready to help.
+      </p>
+      <div className="mt-10">
+        <a
+          href="#contact-form"
+          className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#FF2A00] hover:bg-[#E02400] active:bg-[#C91F00] px-7 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-semibold text-white shadow-[0_4px_14px_rgba(255,42,0,0.25)] hover:shadow-[0_8px_24px_rgba(255,42,0,0.35)] hover:-translate-y-0.5 transition-all duration-300"
+        >
+          Get In Touch
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* ── Contact Info + Form ── */}
       <section className="pt-11 pb-24">

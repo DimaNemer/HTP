@@ -12,7 +12,7 @@ export default function Hero() {
    <section className="relative min-h-[100vh] flex items-center pt-28 md:pt-24 overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src="/image1.png"
+          src="/image copy 3.png"
           alt="Cyber background"
           className="w-full h-full object-cover object-center"
         />
@@ -36,12 +36,12 @@ export default function Hero() {
             Protecting what matters the most.
           </p>
 
-          <p className="text-white/85 text-sm sm:text-base leading-relaxed max-w-lg mx-auto lg:mx-0">
+          <p className="text-white/100 text-sm sm:text-base leading-relaxed max-w-lg mx-auto lg:mx-0 font-semibold">
             We cut through complexity in cyber security, AI, geopolitical, and third-party risk.
             Reduce noise and turn intelligence into practical resilience.
           </p>
 
-          <div className="pt-2 flex flex-col sm:flex-row items-center lg:items-start gap-4">
+          <div className="pt-2 flex flex-col sm:flex-row items-center md:items-center lg:items-start md:justify-center lg:justify-start gap-4">
             <Link
               href="/contact#contact-form"
               className="inline-flex items-center gap-2 bg-cta hover:bg-ctaHover active:bg-[#C91F00] text-white font-bold text-sm sm:text-base px-6 sm:px-7 py-3.5 rounded-lg shadow-[0_4px_14px_rgba(255,42,0,0.25)] hover:shadow-[0_8px_24px_rgba(255,42,0,0.35)] hover:-translate-y-0.5 transition-all duration-300"

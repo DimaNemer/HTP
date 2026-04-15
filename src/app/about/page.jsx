@@ -26,15 +26,15 @@ export default function AboutPage() {
       {/* 1. Hero Section */}
      <section className="relative w-full min-h-[80vh] flex items-center justify-center pt-40 md:pt-56 pb-24 overflow-hidden">
   <Image
-    src="/image.png"
+    src="/about.png"
     alt="Strategic Cyber Infrastructure"
     fill
     priority
-    className="object-cover object-center scale-105 brightness-110 contrast-110"
+className="object-cover object-[65%_center] md:object-center scale-105 brightness-110 contrast-110"
   />
 
   <div className="absolute inset-0 bg-primary/30" />
-  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/20 to-primary/40 z-0" />
+<div className="absolute inset-0 bg-gradient-to-r from-primary/50 via-primary/20 to-transparent z-0" />
 
   <div className="container mx-auto px-6 md:px-12 relative z-10 flex justify-center md:justify-start">
     <div className="max-w-4xl text-left">
@@ -53,9 +53,9 @@ export default function AboutPage() {
         </span>
       </h1>
 
-      <p className="text-base sm:text-lg md:text-xl text-white/85 font-light max-w-2xl leading-relaxed">
-        "Our DNA is protecting what matters the most — your most valuable digital assets."
-      </p>
+    <p className="text-base sm:text-lg md:text-xl text-white font-extrabold sm:font-light max-w-2xl leading-relaxed">
+  "Our DNA is protecting what matters the most — your most valuable digital assets."
+</p>
 
     </div>
   </div>
@@ -77,7 +77,7 @@ export default function AboutPage() {
           security leader with over 25 years of hands-on experience.
         </p>
 
-        <p className="text-textMain text-base md:text-lg leading-relaxed mb-8">
+        <p className="text-textMain text-base text-lg leading-relaxed mb-8">
           After building a trusted reputation for solving complex problems and
           translating security into clear business outcomes, she established
           her consultancy to support boards and fast-growing organisations
