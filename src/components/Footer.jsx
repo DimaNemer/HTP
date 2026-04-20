@@ -2,7 +2,13 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Linkedin, Mail, MapPin, ExternalLink } from "lucide-react";
+import { Mail, MapPin, ExternalLink } from "lucide-react";
+const LinkedInSVG = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+    <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+  </svg>
+);
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -53,7 +59,7 @@ export default function Footer() {
                 className="w-9 h-9 rounded-xl bg-white/10 hover:bg-htpRed flex items-center justify-center transition-colors duration-200"
                 aria-label="LinkedIn"
               >
-                <Linkedin className="w-4 h-4 text-white" />
+                <LinkedInSVG  className="w-4 h-4 text-white" />
               </Link>
             </div>
           </div>
@@ -133,7 +139,7 @@ export default function Footer() {
                   className="flex items-start gap-3 text-white/55 hover:text-white text-sm transition-colors duration-200 group"
                 >
                   <div className="w-8 h-8 rounded-lg bg-white/10 group-hover:bg-htpRed/20 flex items-center justify-center flex-shrink-0 transition-colors">
-                    <Linkedin className="w-3.5 h-3.5 text-htpRed" />
+                    <LinkedInSVG  className="w-3.5 h-3.5 text-htpRed" />
                   </div>
                   HTP Consultancy on LinkedIn
                 </Link>

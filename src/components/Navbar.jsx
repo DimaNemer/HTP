@@ -5,7 +5,14 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { Linkedin, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
+
+const LinkedInSVG = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+    <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+  </svg>
+);
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -100,7 +107,7 @@ export default function Navbar() {
               }`}
               aria-label="LinkedIn"
             >
-              <Linkedin className="w-5 h-5" />
+              <LinkedInSVG  className="w-5 h-5" />
             </Link>
           </div>
         </nav>
@@ -163,7 +170,7 @@ export default function Navbar() {
               className="text-textMuted hover:text-accent transition-colors"
               aria-label="LinkedIn"
             >
-              <Linkedin className="w-6 h-6" />
+              <LinkedInSVG  className="w-6 h-6" />
             </Link>
           </div>
         </div>

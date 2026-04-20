@@ -3,10 +3,15 @@
 
 import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
-import { Mail, Phone, MapPin, Linkedin, Send, CheckCircle, ChevronDown } from "lucide-react";
+import { Mail, Phone, MapPin, Send, CheckCircle, ChevronDown } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
-
+import Image from "next/image";   
+const LinkedInSVG = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+    <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+  </svg>
+);
 /* ─── Service Options ──────────────────────────────────────────────────────── */
 const SERVICE_OPTIONS = [
   { value: "", label: "Select a service..." },
@@ -405,7 +410,7 @@ export default function ContactPage() {
                   className="inline-flex items-center gap-3 p-4 bg-white hover:bg-[#F4F8FC] border border-[#D9E4EC] rounded-xl text-[#0B1F3A] hover:text-[#0A4F6E] transition-all duration-300 group w-fit shadow-sm"
                 >
                   <div className="p-2 bg-[#cf4227]/10 rounded-lg group-hover:bg-[#cf4227]/20 transition-colors">
-                    <Linkedin className="w-5 h-5 text-[#cf4227]" />
+                    <LinkedInSVG  className="w-5 h-5 text-[#cf4227]" />
                   </div>
                   <span className="font-semibold text-sm pr-1">HTP Consultancy</span>
                 </Link>
