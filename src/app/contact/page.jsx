@@ -119,7 +119,7 @@ function ContactForm() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           <div className="space-y-2">
             <label htmlFor="firstName" className="block text-sm font-semibold text-[#0B1F3A]">
-              First Name <span className="text-[#FF2A00]">*</span>
+              First Name <span className="text-[#cf4227]">*</span>
             </label>
             <input
               type="text"
@@ -134,7 +134,7 @@ function ContactForm() {
           </div>
           <div className="space-y-2">
             <label htmlFor="lastName" className="block text-sm font-semibold text-[#0B1F3A]">
-              Last Name <span className="text-[#FF2A00]">*</span>
+              Last Name <span className="text-[#cf4227]">*</span>
             </label>
             <input
               type="text"
@@ -152,7 +152,7 @@ function ContactForm() {
         {/* Email */}
         <div className="space-y-2">
           <label htmlFor="email" className="block text-sm font-semibold text-[#0B1F3A]">
-            Email Address <span className="text-[#FF2A00]">*</span>
+            Email Address <span className="text-[#cf4227]">*</span>
           </label>
           <input
             type="email"
@@ -169,7 +169,7 @@ function ContactForm() {
         {/* Company */}
         <div className="space-y-2">
           <label htmlFor="company" className="block text-sm font-semibold text-[#0B1F3A]">
-            Company / Industry <span className="text-[#FF2A00]">*</span>
+            Company / Industry <span className="text-[#cf4227]">*</span>
           </label>
           <input
             type="text"
@@ -186,7 +186,7 @@ function ContactForm() {
         {/* Service dropdown */}
         <div className="space-y-2">
           <label htmlFor="service" className="block text-sm font-semibold text-[#0B1F3A]">
-            Service you're interested in <span className="text-[#FF2A00]">*</span>
+            Service you're interested in <span className="text-[#cf4227]">*</span>
           </label>
           <div className="relative">
             <select
@@ -219,7 +219,7 @@ function ContactForm() {
         {showMultiPicker && (
           <div className="space-y-2">
             <label className="block text-sm font-semibold text-[#0B1F3A]">
-              Which services are you interested in? <span className="text-[#FF2A00]">*</span>
+              Which services are you interested in? <span className="text-[#cf4227]">*</span>
             </label>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {MULTI_SERVICES.map((svc) => {
@@ -231,13 +231,13 @@ function ContactForm() {
                     onClick={() => toggleMultiService(svc)}
                     className={`flex items-center gap-3 px-4 py-3 rounded-xl border text-sm font-medium text-left transition-all duration-150 ${
                       checked
-                        ? "border-[#FF2A00] bg-[#FF2A00]/5 text-[#FF2A00]"
+                        ? "border-[#cf4227] bg-[#cf4227]/5 text-[#cf4227]"
                         : "border-[#D9E4EC] bg-[#F4F8FC] text-[#334155] hover:border-[#0A4F6E]"
                     }`}
                   >
                     <span
                       className={`w-4 h-4 rounded flex items-center justify-center flex-shrink-0 border ${
-                        checked ? "bg-[#FF2A00] border-[#FF2A00]" : "border-[#D9E4EC] bg-white"
+                        checked ? "bg-[#cf4227] border-[#cf4227]" : "border-[#D9E4EC] bg-white"
                       }`}
                     >
                       {checked && (
@@ -252,7 +252,7 @@ function ContactForm() {
               })}
             </div>
             {formData.multiServices.length === 0 && (
-              <p className="text-xs text-[#FF2A00]">Please select at least one service.</p>
+              <p className="text-xs text-[#cf4227]">Please select at least one service.</p>
             )}
           </div>
         )}
@@ -269,7 +269,7 @@ function ContactForm() {
             value={formData.message}
             onChange={handleChange}
             className="w-full bg-[#F4F8FC] border border-[#D9E4EC] rounded-xl px-4 py-3.5 text-[#0B1F3A] placeholder:text-[#64748B] focus:outline-none focus:border-[#0A4F6E] focus:ring-2 focus:ring-[#0A4F6E]/20 transition-all resize-y text-sm"
-            placeholder="Tell us about your needs — we'll take it from there."
+            placeholder="Tell us about your needs we'll take it from there."
           />
         </div>
 
@@ -281,7 +281,7 @@ function ContactForm() {
             className={`w-full flex items-center justify-center gap-3 py-4 px-6 rounded-xl font-bold text-base transition-all duration-300 ${
               status === "success"
                 ? "bg-emerald-50 text-emerald-600 border border-emerald-200"
-                : "bg-[#FF2A00] hover:bg-[#E02400] active:bg-[#C91F00] text-white shadow-[0_4px_14px_rgba(255,42,0,0.25)] hover:shadow-[0_8px_24px_rgba(255,42,0,0.35)] hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0"
+                : "bg-[#cf4227] hover:bg-[#E02400] active:bg-[#C91F00] text-white shadow-[0_4px_14px_rgba(255,42,0,0.25)] hover:shadow-[0_8px_24px_rgba(255,42,0,0.35)] hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0"
             }`}
           >
             {status === "submitting" ? (
@@ -326,17 +326,17 @@ export default function ContactPage() {
     <div className="max-w-3xl mx-auto">
       <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
         Let's{" "}
-        <span className="text-white underline decoration-[#FF2A00] decoration-4 underline-offset-4">
+        <span className="text-white underline decoration-[#cf4227] decoration-4 underline-offset-4">
           Connect
         </span>
       </h1>
-      <p className="text-base sm:text-lg md:text-xl text-white leading-relaxed max-w-2xl mx-auto">
-        Whether you're looking to protect your business or explore new opportunities, our team is ready to help.
-      </p>
+   <p className="text-base sm:text-lg md:text-xl text-white leading-relaxed max-w-2xl mx-auto drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] bg-black/20 px-6 py-3 rounded-xl backdrop-blur-[2px]">
+  Whether you're looking to protect your business or explore new opportunities, our team is ready to help.
+</p>
       <div className="mt-10">
         <a
           href="#contact-form"
-          className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#FF2A00] hover:bg-[#E02400] active:bg-[#C91F00] px-7 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-semibold text-white shadow-[0_4px_14px_rgba(255,42,0,0.25)] hover:shadow-[0_8px_24px_rgba(255,42,0,0.35)] hover:-translate-y-0.5 transition-all duration-300"
+          className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#cf4227] hover:bg-[#c43318] active:bg-[#c43318] px-7 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-semibold text-white shadow-[0_4px_14px_rgba(255,42,0,0.25)] hover:shadow-[0_8px_24px_rgba(255,42,0,0.35)] hover:-translate-y-0.5 transition-all duration-300"
         >
           Get In Touch
         </a>
@@ -354,7 +354,7 @@ export default function ContactPage() {
             <div className="lg:col-span-5 flex flex-col gap-8">
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-[#0B1F3A] leading-tight mb-4">
-                  Contact <span className="text-[#FF2A00]">Us</span>
+                  Contact <span className="text-[#cf4227]">Us</span>
                 </h2>
                 <p className="text-[#334155] text-base leading-relaxed max-w-md">
                   A better future is possible. Contact us to learn more about our mission and work, or to become involved yourself.
@@ -363,8 +363,8 @@ export default function ContactPage() {
 
               <div className="space-y-5">
                 <div className="flex items-start gap-4">
-                  <div className="p-3 bg-[#FF2A00]/10 border border-[#FF2A00]/20 rounded-xl flex-shrink-0">
-                    <Phone className="w-5 h-5 text-[#FF2A00]" />
+                  <div className="p-3 bg-[#cf4227]/10 border border-[#cf4227]/20 rounded-xl flex-shrink-0">
+                    <Phone className="w-5 h-5 text-[#cf4227]" />
                   </div>
                   <div>
                     <h3 className="text-xs font-bold text-[#64748B] uppercase tracking-wider mb-1">Phone</h3>
@@ -375,8 +375,8 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="p-3 bg-[#FF2A00]/10 border border-[#FF2A00]/20 rounded-xl flex-shrink-0">
-                    <Mail className="w-5 h-5 text-[#FF2A00]" />
+                  <div className="p-3 bg-[#cf4227]/10 border border-[#cf4227]/20 rounded-xl flex-shrink-0">
+                    <Mail className="w-5 h-5 text-[#cf4227]" />
                   </div>
                   <div>
                     <h3 className="text-xs font-bold text-[#64748B] uppercase tracking-wider mb-1">Email</h3>
@@ -387,8 +387,8 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="p-3 bg-[#FF2A00]/10 border border-[#FF2A00]/20 rounded-xl flex-shrink-0">
-                    <MapPin className="w-5 h-5 text-[#FF2A00]" />
+                  <div className="p-3 bg-[#cf4227]/10 border border-[#cf4227]/20 rounded-xl flex-shrink-0">
+                    <MapPin className="w-5 h-5 text-[#cf4227]" />
                   </div>
                   <div>
                     <h3 className="text-xs font-bold text-[#64748B] uppercase tracking-wider mb-1">Location</h3>
@@ -404,8 +404,8 @@ export default function ContactPage() {
                   target="_blank"
                   className="inline-flex items-center gap-3 p-4 bg-white hover:bg-[#F4F8FC] border border-[#D9E4EC] rounded-xl text-[#0B1F3A] hover:text-[#0A4F6E] transition-all duration-300 group w-fit shadow-sm"
                 >
-                  <div className="p-2 bg-[#FF2A00]/10 rounded-lg group-hover:bg-[#FF2A00]/20 transition-colors">
-                    <Linkedin className="w-5 h-5 text-[#FF2A00]" />
+                  <div className="p-2 bg-[#cf4227]/10 rounded-lg group-hover:bg-[#cf4227]/20 transition-colors">
+                    <Linkedin className="w-5 h-5 text-[#cf4227]" />
                   </div>
                   <span className="font-semibold text-sm pr-1">HTP Consultancy</span>
                 </Link>
@@ -418,7 +418,7 @@ export default function ContactPage() {
                   <div>
                     <p className="text-[#0B1F3A] font-semibold text-sm mb-1">Free 1-Hour Consultation</p>
                     <p className="text-[#64748B] text-xs leading-relaxed">
-                      We offer a complimentary 1-hour session to understand your needs and define your goals — no commitment required.
+                      We offer a complimentary 1-hour session to understand your needs and define your goals no commitment required.
                     </p>
                   </div>
                 </div>
@@ -446,10 +446,10 @@ export default function ContactPage() {
                         window.history.replaceState({}, "", url.toString());
                         window.dispatchEvent(new PopStateEvent("popstate"));
                       }}
-                      className="flex items-center justify-between px-4 py-3 rounded-xl border border-[#D9E4EC] bg-white hover:border-[#FF2A00] hover:text-[#FF2A00] text-[#334155] text-sm font-medium transition-all duration-150 group"
+                      className="flex items-center justify-between px-4 py-3 rounded-xl border border-[#D9E4EC] bg-white hover:border-[#cf4227] hover:text-[#cf4227] text-[#334155] text-sm font-medium transition-all duration-150 group"
                     >
                       {svc.label}
-                      <ChevronDown className="w-4 h-4 -rotate-90 text-[#D9E4EC] group-hover:text-[#FF2A00] transition-colors" />
+                      <ChevronDown className="w-4 h-4 -rotate-90 text-[#D9E4EC] group-hover:text-[#cf4227] transition-colors" />
                     </a>
                   ))}
                 </div>

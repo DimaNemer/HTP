@@ -14,7 +14,6 @@ export default function CTA() {
         <div className="absolute top-0 left-1/4 w-96 h-96 rounded-full bg-accent blur-3xl" />
         <div className="absolute bottom-0 right-1/4 w-80 h-80 rounded-full bg-accent blur-3xl" />
       </div>
-
       <div className="container mx-auto px-6 md:px-12 relative z-10 text-center max-w-3xl">
        <div ref={reveal} className="flex flex-col items-center gap-5">
           {/* Icon badge — white bg for visibility on dark section */}

@@ -20,11 +20,11 @@ const services = [
     title: "Board-ready cyber leadership without the full-time cost.",
     subtitle: "Fractional CISO & Board Advisory",
     intro:
-      "CISO and Cybersecurity Board advisory roles for organisations that need high-level security leadership and governance — delivered on a part-time, retainer, or project basis, without the overhead of a permanent hire.",
+      "CISO and Cybersecurity Board advisory roles for organisations that need high-level security leadership and governance, delivered on a part-time, retainer, or project basis, without the overhead of a permanent hire.",
     whatIsIt:
-      "Think of us as your on-call security executive. Many organisations need senior cybersecurity leadership but can't justify a full-time CISO. Our Fractional CISO service gives you access to board-level security expertise — strategy, governance, risk, and compliance — at a fraction of the cost.",
+      "Think of us as your on-call security executive. Many organisations need senior cybersecurity leadership but can't justify a full-time CISO. Our Fractional CISO service gives you access to board-level security expertise: strategy, governance, risk, and compliance, at a fraction of the cost.",
     whoIsItFor:
-      "Mid-sized companies, startups scaling up, or firms preparing for compliance audits, fundraising, or public listing — who need strategic security leadership without a permanent hire.",
+      "Mid-sized companies, startups scaling up, or firms preparing for compliance audits, fundraising, or public listing, who need strategic security leadership without a permanent hire.",
     howItWorks:
       "We start with a scoping call to understand your needs. We then agree on a retainer or project scope, sign an NDA, and your dedicated advisor starts within days.",
     includes: [
@@ -34,7 +34,7 @@ const services = [
       },
       {
         title: "Board & Executive Reporting",
-        desc: "Translate cyber risk and security posture into board-level insights and dashboards — no jargon.",
+        desc: "Translate cyber risk and security posture into board-level insights and dashboards. No jargon.",
       },
       {
         title: "Risk Management & Assessment",
@@ -50,7 +50,7 @@ const services = [
       },
     ],
     whyItMatters:
-      "Cyber threats don't pause while you're between hires. A single breach or compliance gap can cost far more than a year of advisory services. Our fractional model gives you expert oversight exactly when and where you need it — proactively, not reactively.",
+      "Cyber threats don't pause while you're between hires. A single breach or compliance gap can cost far more than a year of advisory services. Our fractional model gives you expert oversight exactly when and where you need it, proactively, not reactively.",
     stats: [
       { num: "$4.9M", label: "Average cost of a data breach in 2024" },
       { num: "68%", label: "Of SMEs lack a dedicated security leader" },
@@ -65,25 +65,25 @@ const services = [
     title: "Find your weaknesses before attackers do.",
     subtitle: "Red Team, Blue & Purple Teaming",
     intro:
-      "Tailored security testing across applications, code, physical systems, and social engineering — delivered by experienced ethical hackers who think and behave like real-world adversaries.",
+      "Tailored security testing across applications, code, physical systems, and social engineering, delivered by experienced ethical hackers who think and behave like real-world adversaries.",
     whatIsIt:
-      "Security testing means deliberately probing your systems, people, and processes to find vulnerabilities before real attackers do. We use the same tools and mindset as cybercriminals — but we work for you.",
+      "Security testing means deliberately probing your systems, people, and processes to find vulnerabilities before real attackers do. We use the same tools and mindset as cybercriminals, and we work for you.",
     whoIsItFor:
       "Any organisation that stores sensitive data, runs customer-facing applications, or operates critical infrastructure. If you haven't tested your defences recently, you don't truly know how secure you are.",
     howItWorks:
-      "We agree on scope and rules of engagement, sign an NDA, then conduct a structured engagement — offensive testing, defensive analysis, or both. You receive a clear, actionable report with prioritised findings.",
+      "We agree on scope and rules of engagement, sign an NDA, then conduct a structured engagement covering offensive testing, defensive analysis, or both. You receive a clear, actionable report with prioritised findings.",
     includes: [
       {
         title: "Offensive (Red Team)",
-        desc: "Proactive ethical hacking that mimics real cyber attacks — exploiting vulnerabilities to eliminate the guesswork of what may happen during an actual breach.",
+        desc: "Proactive ethical hacking that mimics real cyber attacks, exploiting vulnerabilities to eliminate the guesswork of what may happen during an actual breach.",
       },
       {
         title: "Defensive (Blue Team)",
-        desc: "A reactive approach focused on prevention, detection, and response — analysing your environment to detect potential network flaws before they're exploited.",
+        desc: "A reactive approach focused on prevention, detection, and response, analysing your environment to detect potential network flaws before they're exploited.",
       },
       {
         title: "Purple Teaming",
-        desc: "A collaborative approach combining Red and Blue teams to maximise learning — attackers and defenders work together to improve your security posture continuously.",
+        desc: "A collaborative approach combining Red and Blue teams to maximise learning, where attackers and defenders work together to improve your security posture continuously.",
       },
       {
         title: "Application & Code Testing",
@@ -91,11 +91,11 @@ const services = [
       },
       {
         title: "Physical & Social Engineering",
-        desc: "Testing the human element — phishing simulations, pretexting, and physical access attempts to assess your people and processes.",
+        desc: "Testing the human element through phishing simulations, pretexting, and physical access attempts to assess your people and processes.",
       },
     ],
     whyItMatters:
-      "Most organisations only discover vulnerabilities after they've been exploited. Regular testing flips this — giving you a clear picture of your real risk exposure and the confidence to act before an incident occurs.",
+      "Most organisations only discover vulnerabilities after they've been exploited. Regular testing flips this, giving you a clear picture of your real risk exposure and the confidence to act before an incident occurs.",
     stats: [
       { num: "74%", label: "Of breaches involve a human element" },
       { num: "277 days", label: "Average time to identify a breach" },
@@ -107,12 +107,12 @@ const services = [
     id: "ipo-readiness",
     icon: Rocket,
     badge: "Pre-IPO Readiness",
-    title: "Go public with confidence — not cyber risk.",
+    title: "Go public with confidence, not cyber risk.",
     subtitle: "Cybersecurity Controls & Risk for Pre-IPO Companies",
     intro:
       "As companies prepare for an IPO, they face heightened scrutiny from investors, regulators, and stakeholders. Cybersecurity gaps can jeopardise valuation, delay the process, and expose the company to regulatory penalties and reputational damage.",
     whatIsIt:
-      "Pre-IPO cybersecurity readiness means ensuring your security posture, compliance frameworks, and governance structures meet the demands of public markets — before investors and regulators look under the hood.",
+      "Pre-IPO cybersecurity readiness means ensuring your security posture, compliance frameworks, and governance structures meet the demands of public markets, before investors and regulators look under the hood.",
     whoIsItFor:
       "Companies preparing for a public listing, late-stage startups approaching Series C or D, and finance teams managing due diligence processes who need to demonstrate robust security governance.",
     howItWorks:
@@ -128,7 +128,7 @@ const services = [
       },
       {
         title: "Incident Response & Crisis Management",
-        desc: "Develop a robust incident response plan and test it through simulations — so you're ready for anything.",
+        desc: "Develop a robust incident response plan and test it through simulations, so you're ready for anything.",
       },
       {
         title: "Third-Party Vendor Risk Management",
@@ -144,7 +144,7 @@ const services = [
       },
     ],
     whyItMatters:
-      "A strong cybersecurity posture enhances investor confidence, mitigates legal and financial risks, and ensures a smooth, secure transition to a publicly traded company. Investors are increasingly sophisticated — gaps discovered in due diligence can kill a deal.",
+      "A strong cybersecurity posture enhances investor confidence, mitigates legal and financial risks, and ensures a smooth, secure transition to a publicly traded company. Investors are increasingly sophisticated, and gaps discovered in due diligence can kill a deal.",
     stats: [
       { num: "83%", label: "Of IPO investors consider cybersecurity in due diligence" },
       { num: "$5.9M", label: "Average regulatory fine for pre-IPO data breaches" },
@@ -159,11 +159,11 @@ const services = [
     title: "Stay compliant. Stay resilient. Stay ahead.",
     subtitle: "Compliance Oversight & Risk Mitigation",
     intro:
-      "Whether you run an app, small business, eCommerce website, or FTSE 250 — all businesses need to minimise their legal liability and risk. We make compliance clear, manageable, and tailored to your world.",
+      "Whether you run an app, small business, eCommerce website, or FTSE 250, all businesses need to minimise their legal liability and risk. We make compliance clear, manageable, and tailored to your world.",
     whatIsIt:
       "Compliance and risk mitigation means knowing exactly what regulations apply to your business, building the policies and controls to meet them, and having a trusted advisor help you stay ahead of an ever-changing regulatory landscape.",
     whoIsItFor:
-      "Any business handling customer data, financial transactions, or operating in regulated industries — from early-stage startups navigating GDPR for the first time, to established enterprises preparing for ISO 27001 certification.",
+      "Any business handling customer data, financial transactions, or operating in regulated industries, from early-stage startups navigating GDPR for the first time, to established enterprises preparing for ISO 27001 certification.",
     howItWorks:
       "We assess your current compliance posture, identify gaps against relevant frameworks, build a tailored risk management plan complete with policies and due diligence, and support you through audits and certifications.",
     includes: [
@@ -177,11 +177,11 @@ const services = [
       },
       {
         title: "Regulatory Audit Preparation",
-        desc: "Prepare for certifications, audits and regulatory reviews — so you walk in confident, not scrambling.",
+        desc: "Prepare for certifications, audits and regulatory reviews, so you walk in confident, not scrambling.",
       },
       {
         title: "Third-Party & Vendor Risk Management",
-        desc: "Assess and mitigate supply chain and vendor security risks — including geopolitical, emerging, and sector-specific risks.",
+        desc: "Assess and mitigate supply chain and vendor security risks, including geopolitical, emerging, and sector-specific risks.",
       },
       {
         title: "AI & Emerging Tech Risk",
@@ -189,7 +189,7 @@ const services = [
       },
     ],
     whyItMatters:
-      "Non-compliance isn't just a legal risk — it's a business risk. Fines, reputational damage, and lost contracts can result from gaps you didn't know existed. We help you worry less about liabilities so you can concentrate on growing your business.",
+      "Non-compliance isn't just a legal risk, it's a business risk. Fines, reputational damage, and lost contracts can result from gaps you didn't know existed. We help you worry less about liabilities so you can concentrate on growing your business.",
     stats: [
       { num: "€20M", label: "Maximum GDPR fine or 4% of global turnover" },
       { num: "56%", label: "Of businesses lack a formal risk management framework" },
@@ -347,9 +347,9 @@ export default function WhatWeDoPage() {
     className="object-cover object-[62%_center] sm:object-center scale-105"
   />
         <div className="absolute inset-0 bg-gradient-to-b from-primary/20 via-primary/40 to-primary/70 z-0" />
-        <div className="container mx-auto px-6 md:px-12 relative z-10 flex justify-start">
-          <div className="max-w-4xl">
-            <div className="inline-flex items-left gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 mb-8 w-fit mx-auto">
+        <div className="container mx-auto px-6 md:px-12 relative z-10 flex justify-center">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 mb-8 w-fit mx-auto">
               <span className="w-2 h-2 rounded-full bg-white animate-pulse mt-2" />
               <span className="text-m font-semibold uppercase tracking-widest text-htpRed">
                 What We Do
@@ -362,53 +362,76 @@ export default function WhatWeDoPage() {
               </span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-white/85 font-light max-w-2xl mx-auto leading-relaxed">
-              Protecting what matters most — with clear, practical cyber security
+              Protecting what matters most with clear, practical cyber security
               and risk advisory tailored to your organisation.
             </p>
           </div>
         </div>
       </section>
 
+
       {/* 2. Intro — unchanged */}
-      <section className="py-16 md:py-20 bg-secondary">
-        <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
-            <div className="max-w-2xl">
-              <p className="text-2xl font-bold text-htpRed tracking-[0.22em] uppercase mb-4 text-center">
-                What We Do
-              </p>
-              <h2 className="text-3xl md:text-4xl font-semibold text-primary leading-tight mb-5">
-                We simplify cyber security, AI, and third party risk.
-              </h2>
-              <p className="text-lg text-primary font-medium leading-relaxed mb-4">
-                No jargon. No noise. Just clear insight into what really matters.
-              </p>
-              <p className="text-textMain text-base md:text-lg leading-relaxed mb-4">
-                With over 25 years of experience working with FTSE 250 companies,
-                SMEs, and startups across multiple industries, we turn complex
-                threats into practical action.
-              </p>
-              <p className="text-textMain text-base md:text-lg leading-relaxed mb-6">
-                We focus on clear, sensible cyber security hygiene that reduces risk
-                and helps you stay resilient in a fast changing world.
-              </p>
-              <div className="h-1 w-20 bg-htpRed rounded-full" />
-            </div>
-         <div className="flex justify-center lg:justify-end">
-  <div className="relative w-full max-w-[260px] sm:max-w-[320px] md:max-w-[380px] lg:max-w-[420px] mx-auto lg:mx-0">
-    <div className="absolute inset-0 bg-accent/10 rounded-3xl blur-2xl" />
-    <div className="relative overflow-hidden rounded-3xl border border-borderLight bg-white shadow-[0_20px_50px_rgba(11,31,58,0.10)]">
-      <img
-        src="/whatwedo.png"
-        alt="HTP Consultancy cyber security advisory"
-        className="w-full h-[240px] sm:h-[280px] md:h-[320px] object-cover object-center"
-      />
-    </div>
-  </div>
-</div>
+    <section className="py-14 md:py-16 bg-secondary">
+  <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-12">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+
+      {/* LEFT CONTENT */}
+      <div className="max-w-2xl">
+        <p className="text-xl md:text-2xl font-bold text-htpRed tracking-[0.18em] uppercase mb-3 text-center">
+          What We Do
+        </p>
+
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-primary leading-tight mb-4">
+          We simplify cyber security, AI, and third party risk.
+        </h2>
+
+        <p className="text-base md:text-lg text-primary font-medium leading-relaxed mb-3">
+          No jargon. No noise. Just clear insight into what really matters.
+        </p>
+
+        <p className="text-textMain text-sm md:text-base leading-relaxed mb-3">
+          With over 25 years of experience working with FTSE 250 companies,
+          SMEs, and startups across multiple industries, we turn complex
+          threats into practical action.
+        </p>
+
+       
+        <div className="text-textMain text-sm md:text-base leading-relaxed space-y-3 mb-5">
+          <p>
+            We focus on clear, sensible cyber security hygiene that reduces risk
+            and helps you stay resilient in a fast changing world; we there is a gap often scaleup and startup businesses are given advised catered to FTSE giants.
+          </p>
+
+          <p>
+            We want help founders sleep better by putting the right cyber security foundations in place without slowing them down or blowing the budget.
+          </p>
+
+          <p>
+            Supporting females in this space. Cyber awareness should be as natural, easy to understand and accessible as financial awareness and women should feel fully empowered to lead it.
+          </p>
+        </div>
+
+        <div className="h-1 w-16 bg-htpRed rounded-full" />
+      </div>
+
+      {/* RIGHT IMAGE */}
+      <div className="flex justify-center lg:justify-end">
+        <div className="relative w-full max-w-[240px] sm:max-w-[300px] md:max-w-[340px] lg:max-w-[380px]">
+          <div className="absolute inset-0 bg-accent/10 rounded-2xl blur-xl" />
+
+          <div className="relative overflow-hidden rounded-2xl border border-borderLight bg-white shadow-[0_15px_40px_rgba(11,31,58,0.08)]">
+            <img
+              src="/whatwedo.png"
+              alt="HTP Consultancy cyber security advisory"
+              className="w-full h-[220px] sm:h-[260px] md:h-[300px] object-cover object-center"
+            />
           </div>
         </div>
-      </section>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       {/* 3. Our Work — BEFORE services */}
       <section className="py-20 md:py-24 bg-white">

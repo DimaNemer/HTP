@@ -37,7 +37,7 @@ export default function WhyChooseUs() {
         {/* Right: Benefit Cards */}
         <div className="grid gap-5">
           {[
-            { title: "Simplified Strategy", desc: "No excessive noise — just actionable strategies that work." },
+            { title: "Simplified Strategy", desc: "No excessive noise, just actionable strategies that work." },
             { title: "Cross-Industry Excellence", desc: "Proven track record across FTSE 250, startups, and defence." },
             { title: "Fundamental Hygiene", desc: "Focus on core protections that eliminate the vast majority of threats." },
             { title: "Agile Resilience", desc: "Stay ahead in a fast-changing threat landscape without disruption." },

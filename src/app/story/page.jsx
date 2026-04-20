@@ -15,16 +15,18 @@ const tags = [
   "Pre-IPO advisory",
   "Fractional board",
   "Emerging threats",
+  "AI",
+  "Quantum threats"
 ];
 
 const stats = [
   { value: "25+", label: "Years of experience" },
-  { value: "3", label: "Continents served" },
-  { value: "FTSE & Gov", label: "Client range" },
+  { value: "4", label: "Continents served" },
+  { value: "FTSE , Gov & Scale ups", label: "Client range" },
 ];
 
 export const metadata = {
-  title: "Our Story — HTP Consultancy",
+  title: "Our Story HTP Consultancy",
 };
 
 StoryPage.noNavbar = true;
@@ -54,7 +56,7 @@ export default function StoryPage() {
               Harshini Carey
             </h1>
             <p className="text-sm text-[#94afc8]">
-              HTP Consultancy — Cyber Security, Compliance &amp; Risk Advisory
+              HTP Consultancy Cyber Security, Compliance &amp; Risk Advisory
             </p>
           </div>
         </div>
@@ -76,7 +78,7 @@ export default function StoryPage() {
             </h2>
             <div className="space-y-4 text-sm text-textMain leading-relaxed">
               <p>
-                HTP Consultancy was founded by Harshini Carey — a strategic
+                HTP Consultancy was founded by Harshini Carey, a strategic
                 cyber security leader with over 25 years of hands-on experience
                 across technology and risk. After building a trusted reputation
                 for solving complex problems and translating security into clear
@@ -89,7 +91,7 @@ export default function StoryPage() {
                 advisory, Fractional Board services tailored to each client's
                 needs, and Pre-IPO and Compliance risk mitigation. HTP works with
                 tech startups, FTSE-listed companies, and government entities
-                alike — bringing the same rigour and clarity to every engagement,
+                alike, bringing the same rigour and clarity to every engagement,
                 regardless of scale.
               </p>
             </div>
@@ -98,7 +100,7 @@ export default function StoryPage() {
           {/* Quote */}
           <blockquote className="border-l-4 border-accent pl-5 py-3 bg-secondary rounded-r-xl">
             <p className="text-sm text-primary/90 font-medium italic leading-relaxed">
-              "We love working with all types of clients — startups, FTSE, and
+              "We love working with all types of clients: startups, FTSE, and
               government entities. While startups scale quickly, we help secure
               their platforms without slowing growth, embedding security from day
               one, just as Facebook and Google did. Our expertise lies in
@@ -114,7 +116,7 @@ export default function StoryPage() {
             </h2>
             <div className="space-y-4 text-sm text-textMain leading-relaxed">
               <p>
-                Harshini held senior roles across Europe and the Americas —
+                Harshini held senior roles across Europe and the Americas,
                 including at the London Stock Exchange and KMD Neupart,
                 Denmark's largest IT supplier. Her background spans cyber
                 security, compliance, and risk, supported by an extensive network
@@ -124,7 +126,7 @@ export default function StoryPage() {
               <p>
                 She is driven to deliver measurable impact by safeguarding
                 organisations while working effectively within their operating
-                realities — reducing risk without adding unnecessary complexity.
+                realities, reducing risk without adding unnecessary complexity.
               </p>
             </div>
           </div>
@@ -136,8 +138,8 @@ export default function StoryPage() {
             </p>
             <p className="text-sm text-textMain leading-relaxed">
               Harshini's resilience is personal as well as professional. A war
-              child who lost her father at age 13, she set up her first business
-              — a home jewellery venture to support her own education — and was
+              child who lost her father at age 13, she set up her first business,
+              a home jewellery venture to support her own education, and was
               raised by strong women who shaped her sense of purpose. That
               foundation drives everything she does today.
             </p>
@@ -153,7 +155,7 @@ export default function StoryPage() {
                 Shaped by a background rooted in military service, healthcare,
                 and entrepreneurship, Harshini brings a deeply embedded "protect
                 what matters" mindset to her work. Discipline, sound judgement,
-                empathy, and a strong work ethic underpin every engagement —
+                empathy, and a strong work ethic underpin every engagement,
                 alongside a clear belief that effective governance and security
                 should enable progress, not impede it.
               </p>

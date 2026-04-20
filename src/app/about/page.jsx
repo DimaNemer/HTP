@@ -36,10 +36,10 @@ className="object-cover object-[65%_center] md:object-center scale-105 brightnes
   <div className="absolute inset-0 bg-primary/30" />
 <div className="absolute inset-0 bg-gradient-to-r from-primary/50 via-primary/20 to-transparent z-0" />
 
-  <div className="container mx-auto px-6 md:px-12 relative z-10 flex justify-center md:justify-start">
-    <div className="max-w-4xl text-left">
+  <div className="container mx-auto px-6 md:px-12 relative z-10 flex justify-center">
+    <div className="max-w-4xl mx-auto text-center">
       
-      <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 mb-8 w-fit">
+      <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 mb-8 w-fit mx-auto">
         <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
         <span className="text-xs font-semibold uppercase tracking-widest text-htpRed">
           About HTP Consultancy
@@ -53,9 +53,9 @@ className="object-cover object-[65%_center] md:object-center scale-105 brightnes
         </span>
       </h1>
 
-    <p className="text-base sm:text-lg md:text-xl text-white font-extrabold sm:font-light max-w-2xl leading-relaxed">
-  "Our DNA is protecting what matters the most — your most valuable digital assets."
-</p>
+      <p className="text-base sm:text-lg md:text-xl text-white font-extrabold sm:font-light max-w-2xl mx-auto leading-relaxed">
+        "Our DNA is protecting what matters the most your most valuable digital assets."
+      </p>
 
     </div>
   </div>
@@ -102,6 +102,93 @@ className="object-cover object-[65%_center] md:object-center scale-105 brightnes
     </div>
   </div>
 </section>
+
+   {/* 8. Values */}
+      <section className="py-24 bg-secondary">
+        <div className="container mx-auto px-6 md:px-12">
+          <div className="text-center mb-16">
+            <p className="text-2xl font-bold text-htpRed tracking-widest uppercase mb-4">Our DNA</p>
+            <h2 className="text-xl md:text-2xl font-semibold text-primary leading-snug max-w-3xl mx-auto">
+              The core values that drive our integrity and innovation.
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-7">
+            {[
+              {
+                title: "Integrity",
+                desc: "We operate with strong moral principles and accountability.",
+                icon: Award,
+              },
+              {
+                title: "Sincerity & Authenticity",
+                desc: "We are committed to delivering real impact for our clients.",
+                icon: Heart,
+              },
+              {
+                title: "Innovation",
+                desc: "We value original thinking and practical solutions to complex challenges.",
+                icon: Activity,
+              },
+            ].map((val, i) => (
+              <div
+                key={i}
+                className="flex flex-col items-center text-center p-10 bg-white border border-borderLight rounded-2xl card-hover shadow-sm"
+              >
+                <div className="p-4 bg-accent/10 rounded-full mb-6">
+                  <val.icon className="w-7 h-7 text-htpRed" />
+                </div>
+                <h3 className="text-lg font-bold text-primary mb-3">{val.title}</h3>
+                <p className="text-textMuted text-sm leading-relaxed">{val.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+   {/* 5. Our Approach */}
+      <section className="py-24 bg-secondary">
+        <div className="container mx-auto px-6 md:px-12">
+          <div className="text-center mb-16">
+            <p className="text-lg font-bold text-htpRed tracking-widest uppercase mb-4">Our Approach</p>
+            <h2 className="text-2xl md:text-3xl font-semibold text-primary leading-snug max-w-4xl mx-auto">
+              Delivering practical outcomes without unnecessary complexity.
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-7">
+            {[
+              {
+                title: "Simplifying Complexity",
+                desc: "Simplifying complex requirements to ensure clear, executable strategies.",
+                icon: Layers,
+              },
+              {
+                title: "Proportionate Solutions",
+                desc: "Aligning requirements with proportionate information security solutions.",
+                icon: Settings,
+              },
+              {
+                title: "Practical Outcomes",
+                desc: "Delivering practical outcomes without unnecessary complexity.",
+                icon: Target,
+              },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="bg-white border border-borderLight p-8 rounded-2xl card-hover shadow-sm flex flex-col items-start"
+              >
+                <div className="p-3 bg-accent/10 rounded-xl mb-6">
+                  <item.icon className="w-7 h-7 text-htpRed" />
+                </div>
+                <h3 className="text-lg font-bold text-primary mb-3">{item.title}</h3>
+                <p className="text-textMuted text-sm leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
 
       {/* 3. What We Do — Cards */}
       <section className="py-24 bg-secondary">
@@ -182,49 +269,7 @@ className="object-cover object-[65%_center] md:object-center scale-105 brightnes
         </div>
       </section>
 
-      {/* 5. Our Approach */}
-      <section className="py-24 bg-secondary">
-        <div className="container mx-auto px-6 md:px-12">
-          <div className="text-center mb-16">
-            <p className="text-lg font-bold text-htpRed tracking-widest uppercase mb-4">Our Approach</p>
-            <h2 className="text-2xl md:text-3xl font-semibold text-primary leading-snug max-w-4xl mx-auto">
-              Delivering practical outcomes without unnecessary complexity.
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-7">
-            {[
-              {
-                title: "Simplifying Complexity",
-                desc: "Simplifying complex requirements to ensure clear, executable strategies.",
-                icon: Layers,
-              },
-              {
-                title: "Proportionate Solutions",
-                desc: "Aligning requirements with proportionate information security solutions.",
-                icon: Settings,
-              },
-              {
-                title: "Practical Outcomes",
-                desc: "Delivering practical outcomes without unnecessary complexity.",
-                icon: Target,
-              },
-            ].map((item, i) => (
-              <div
-                key={i}
-                className="bg-white border border-borderLight p-8 rounded-2xl card-hover shadow-sm flex flex-col items-start"
-              >
-                <div className="p-3 bg-accent/10 rounded-xl mb-6">
-                  <item.icon className="w-7 h-7 text-htpRed" />
-                </div>
-                <h3 className="text-lg font-bold text-primary mb-3">{item.title}</h3>
-                <p className="text-textMuted text-sm leading-relaxed">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
+   
       {/* 6. Meet Harshini Carey */}
      <section id="founder" className="bg-white border-y border-borderLight py-16 md:py-18 mb-16 relative">
   <div className="container mx-auto px-6 md:px-12">
@@ -274,7 +319,7 @@ className="object-cover object-[65%_center] md:object-center scale-105 brightnes
 
         <blockquote className="border-l-4 border-accent pl-5 py-3 mb-6 bg-secondary rounded-r-xl">
           <p className="text-base text-primary/90 font-medium italic mb-2">
-            "We love working with all types of clients — from startups to FTSE and government entities."
+            "We love working with all types of clients from startups to FTSE and government entities."
           </p>
           <p className="text-sm text-textMuted italic">
             "Our expertise lies in simplifying client requirements and aligning them with effective solutions."
@@ -324,48 +369,7 @@ className="object-cover object-[65%_center] md:object-center scale-105 brightnes
         </div>
       </section>
 
-      {/* 8. Values */}
-      <section className="py-24 bg-secondary">
-        <div className="container mx-auto px-6 md:px-12">
-          <div className="text-center mb-16">
-            <p className="text-2xl font-bold text-htpRed tracking-widest uppercase mb-4">Our DNA</p>
-            <h2 className="text-xl md:text-2xl font-semibold text-primary leading-snug max-w-3xl mx-auto">
-              The core values that drive our integrity and innovation.
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-7">
-            {[
-              {
-                title: "Integrity",
-                desc: "We operate with strong moral principles and accountability.",
-                icon: Award,
-              },
-              {
-                title: "Sincerity & Authenticity",
-                desc: "We are committed to delivering real impact for our clients.",
-                icon: Heart,
-              },
-              {
-                title: "Innovation",
-                desc: "We value original thinking and practical solutions to complex challenges.",
-                icon: Activity,
-              },
-            ].map((val, i) => (
-              <div
-                key={i}
-                className="flex flex-col items-center text-center p-10 bg-white border border-borderLight rounded-2xl card-hover shadow-sm"
-              >
-                <div className="p-4 bg-accent/10 rounded-full mb-6">
-                  <val.icon className="w-7 h-7 text-htpRed" />
-                </div>
-                <h3 className="text-lg font-bold text-primary mb-3">{val.title}</h3>
-                <p className="text-textMuted text-sm leading-relaxed">{val.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+   
 
       {/* 9. Community Partners */}
       <section className="container mx-auto px-6 md:px-12 py-24 text-center">

@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Privacy Policy — HTP Consultancy",
+  title: "Privacy Policy HTP Consultancy",
 };
 
 const sections = [

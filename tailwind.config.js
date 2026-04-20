@@ -7,20 +7,24 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+         sans: ["var(--font-inter)"],
+      },
       colors: {
+        white: "#FFFFFF",
         background:  "#FFFFFF",
         primary:     "#0B1F3A",
         secondary:   "#F4F8FC",
         card:        "#EAF2F8",
         accent:      "#0A4F6E",
         accentHover: "#0F6A8A",
-        cta:         "#FF2A00",
-        ctaHover:    "#E02400",
+        cta:         "#cf4227",
+        ctaHover:    "#c43318",
         textMain:    "#1f252dff",
         textMuted:   "#22262bff",
         borderLight: "#D9E4EC",
-        htpRed: "#fc512f",
-      htpRedHover: "#E02400",
+        htpRed: "#cf4227",
+      htpRedHover: "#c43318",
       },
     },
   },

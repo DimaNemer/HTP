@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --bg-main:      #FFFFFF;
   --bg-secondary: #F4F8FC;

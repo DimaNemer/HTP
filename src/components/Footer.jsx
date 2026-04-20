@@ -41,7 +41,7 @@ export default function Footer() {
             </Link>
 
             <p className="text-white/55 text-sm leading-relaxed max-w-xs">
-              We cut through complexity in cyber security, AI, geopolitical, and third-party risk — making it clear, practical, and actionable.
+              We cut through complexity in cyber security, AI, geopolitical, and third-party risk, making it clear, practical, and actionable.
             </p>
 
             {/* Social */}

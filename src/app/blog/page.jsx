@@ -10,7 +10,7 @@ const insights = [
     icon: BookOpen,
     title: "What Is Geopolitical Risk and Why Does It Matter?",
     description:
-      "An accessible deep-dive into geopolitical risk — what it means for businesses today, why it's often underestimated, and how organisations can build resilience against threats they can't always see coming.",
+      "An accessible deep-dive into geopolitical risk what it means for businesses today, why it's often underestimated, and how organisations can build resilience against threats they can't always see coming.",
     source: "Harshini's Newsletter",
     cta: "Read Now",
     href: "https://harshinis-newsletter-175e6e.beehiiv.com/p/what-is-geopolitical-risk-and-why-does-it-matter",
@@ -21,8 +21,8 @@ const insights = [
     icon: Linkedin,
     title: "Geopolitical, Maritime and Cyber Risk",
     description:
-      "A LinkedIn post exploring the convergence of geopolitical, maritime, and cyber risk — and why organisations operating in global supply chains need to think about all three together.",
-    source: "LinkedIn — Harshini Carey",
+      "A LinkedIn post exploring the convergence of geopolitical, maritime, and cyber risk and why organisations operating in global supply chains need to think about all three together.",
+    source: "LinkedIn Harshini Carey",
     cta: "View Post",
     href: "https://www.linkedin.com/posts/harshini-carey-0a107b4_geopolitical-maritime-and-cyber-risk-ugcPost-7441871601077358592--beP/",
   },
@@ -43,7 +43,7 @@ const insights = [
     icon: Mic,
     title: "Keynote Speaker: Empowering Women Entrepreneurs in the Age of AI",
     description:
-      "Harshini was invited as a keynote speaker at this Innovate UK Business Connect event — exploring how AI is reshaping entrepreneurship and what it means for the next generation of business leaders.",
+      "Harshini was invited as a keynote speaker at this Innovate UK Business Connect event exploring how AI is reshaping entrepreneurship and what it means for the next generation of business leaders.",
     source: "Innovate UK Business Connect & Google",
     cta: "View Event",
     href: "https://iuk-business-connect.org.uk/events/empowering-women-entrepreneurs-in-the-age-of-ai/",
@@ -52,10 +52,10 @@ const insights = [
     type: "Speaker",
     typeColor: "bg-htpRed/10 text-htpRed",
     icon: Youtube,
-    title: "Speaker: University of Birmingham — Security in the Age of AI, Crypto and Quantum",
+    title: "Speaker: University of Birmingham Security in the Age of AI, Crypto and Quantum",
     description:
       "A live session at the University of Birmingham covering the future of security across three of the most transformative technologies of our time: artificial intelligence, cryptocurrency, and quantum computing.",
-    source: "University of Birmingham — YouTube Live",
+    source: "University of Birmingham YouTube Live",
     cta: "Watch Now",
     href: "https://www.youtube.com/live/tbF8P_KhidQ",
   },
@@ -65,18 +65,18 @@ const insights = [
     icon: Newspaper,
     title: "Security Think Tank: Expect More from GenAI in 2024",
     description:
-      "Published in Computer Weekly's Security Think Tank series — a forward-looking piece on what generative AI means for cybersecurity practitioners, and the higher standard organisations should be demanding from AI tools.",
+      "Published in Computer Weekly's Security Think Tank series a forward-looking piece on what generative AI means for cybersecurity practitioners, and the higher standard organisations should be demanding from AI tools.",
     source: "Computer Weekly",
     cta: "Read Article",
-    href: "https://www.computerweekly.com/opinion/Security-Think-Tank-Expect-more-from-GenAI-in-2024",
+    href: "https://www.computerweekl.com/opinion/Security-Think-Tank-Expect-more-from-GenAI-in-2024",
   },
   {
     type: "Article",
     typeColor: "bg-emerald-50 text-emerald-700",
     icon: FileText,
-    title: "New Security Model: 'Secure GDPR' — Voices of GDPR",
+    title: "New Security Model: 'Secure GDPR' Voices of GDPR",
     description:
-      "Featured in the Voices of GDPR series on Compare the Cloud — introducing a new model for thinking about GDPR compliance through a security-first lens, rather than treating data protection as a legal checkbox.",
+      "Featured in the Voices of GDPR series on Compare the Cloud introducing a new model for thinking about GDPR compliance through a security-first lens, rather than treating data protection as a legal checkbox.",
     source: "Compare the Cloud",
     cta: "Watch Now",
     href: "https://www.comparethecloud.net/watch/voices-of-gdpr/new-model-security-gdpr-voices-gdpr-kmd-neupart-uks-harshini-carey",
@@ -87,7 +87,7 @@ const insights = [
     icon: Newspaper,
     title: "TechRound's Top 50 Cybersecurity Startups 2021",
     description:
-      "HTP Consultancy was recognised in TechRound's Top 50 Cybersecurity Startups — a testament to the firm's early impact and growing reputation in the UK cybersecurity landscape.",
+      "HTP Consultancy was recognised in TechRound's Top 50 Cybersecurity Startups a testament to the firm's early impact and growing reputation in the UK cybersecurity landscape.",
     source: "TechRound",
     cta: "Read Article",
     href: "https://techround.co.uk/news/amperity-accelerates-european-growth-with-new-london-office/",
@@ -141,7 +141,7 @@ export default function BlogPage() {
             </span>
           </h1>
           <p className="text-white/75 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-            Articles, newsletters, speaker appearances, and press features — all in one place.
+            Articles, newsletters, speaker appearances, and press features all in one place.
           </p>
         </div>
       </section>
@@ -242,7 +242,7 @@ export default function BlogPage() {
             Stay ahead of the curve.
           </h2>
           <p className="text-textMuted text-base leading-relaxed mb-8 max-w-xl mx-auto">
-            Subscribe to Harshini's newsletter for practical insights on cyber security, geopolitical risk, and AI — delivered straight to your inbox.
+            Subscribe to Harshini's newsletter for practical insights on cyber security, geopolitical risk, and AI delivered straight to your inbox.
           </p>
           <a
             href="https://harshinis-newsletter-175e6e.beehiiv.com"
