@@ -66,3 +66,44 @@ body {
   background-color: #C91F00;
   transform: translateY(0);
 }
+
+/* globals.css */
+
+/* iPad Mini (768px) and iPad Air (820px) - switch to mobile menu */
+@media (min-width: 768px) and (max-width: 912px) {
+  /* Hide desktop nav, show hamburger */
+  nav.hidden.md\:flex {
+    display: none !important;
+  }
+
+  button.md\:hidden {
+    display: flex !important;
+  }
+}
+
+/* Surface Pro 7 (912px) - tighten spacing */
+@media (min-width: 913px) and (max-width: 1024px) {
+  nav.hidden.md\:flex {
+    gap: 0.6rem !important;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+  }
+
+  nav.hidden.md\:flex a {
+    font-size: 0.75rem !important;
+    letter-spacing: 0.03em !important;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1180px) {
+  nav.hidden.md\:flex {
+    gap: 1rem !important;
+  }
+
+  nav.hidden.md\:flex a {
+    font-size: 0.7rem !important;
+    letter-spacing: 0.02em !important;
+  }
+}

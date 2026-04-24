@@ -19,9 +19,12 @@ export default function WhyChooseUs() {
             </h2>
           </div>
 
-          <p className="text-lg text-textMain leading-relaxed">
-            We simplify cyber security, AI, and third-party risk. No jargon. No noise. Just clear insight into what really matters for your business.
-          </p>
+      <div className="text-lg text-textMain leading-relaxed space-y-1">
+  <p>We simplify Cyber security, AI, and third-party risk.</p>
+  <p>No jargon.</p>
+  <p>No noise.</p>
+  <p>Just clear insight into what really matters for your business.</p>
+</div>
 
           <p className="text-lg text-textMain leading-relaxed">
             With over 25 years of experience working with FTSE 250 companies, SMEs, and startups across technology, defence, aviation, finance, energy, and manufacturing, we turn complex threats into practical action.

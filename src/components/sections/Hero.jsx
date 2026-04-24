@@ -8,7 +8,7 @@ export default function Hero() {
   const revealCenter = useScrollReveal();
 
   return (
-    <section className="relative min-h-[100vh] flex items-center justify-center pt-28 md:pt-24 overflow-hidden">
+    <section className="relative min-h-[100vh] flex items-center justify-center pt-26 md:pt-24 overflow-hidden">
       <div className="absolute inset-0">
         <img
           src="/image copy 3.png"
@@ -43,9 +43,9 @@ export default function Hero() {
 
           {/* Original size restored + readability treatment */}
           <p className="text-white text-base xl:text-lg 2xl:text-xl leading-relaxed max-w-xl xl:max-w-2xl font-semibold mt-3 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] bg-black/20 px-6 py-3 rounded-xl backdrop-blur-[2px]">
-            We cut through complexity in cyber security, AI, geopolitical, and third-party risk.
-            Reduce noise and turn intelligence into practical resilience.
-          </p>
+          ‘’Enterprise scale or scaling fast, we’ll walk besides you’’ <br></br>
+          Our independent experts cut through cyber, AI, and third-party risk to deliver practical, actionable risk mitigation.  
+           </p>
 
           <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link

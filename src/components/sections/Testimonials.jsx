@@ -6,6 +6,13 @@ import { Star, Quote, ChevronLeft, ChevronRight } from "lucide-react";
 
 const testimonials = [
   {
+  quoteTitle: `"Building security from the ground up"`,
+  quote: `Meeting Harshini at the London Google event organised by Innovate UK Business Connect has resulted in Yakbit gaining the necessary cybersecurity assurances for our current stage. Harshini consistently brings strong judgment, dedication, and a positive attitude. Excellent at building relationships, solving problems effectively, and delivering essential cyber security advice under pressure. Enabled us to achieve certification. Thank you!`,
+  role: "CEO",
+  company: "Yakbit",
+  initials: "MJ",
+},
+  {
     quoteTitle: `"Always ready to help"`,
     quote: `Harshini was our main contact for our vulnerability management solutions at Mill Hill. She was always available to answer questions and took us through the whole process from test/trial to deployment. Despite ours being a relatively small implementation we were always looked after, with regular communication and site visits. Would welcome the opportunity to work with Harshini on future projects.`,
     role: "System and Network Administrator",
@@ -26,13 +33,7 @@ const testimonials = [
     company: "Social Media Company",
     initials: "CT",
   },
-  {
-    quoteTitle: `"Add 4th testimonial title here"`,
-    quote: `Add the 4th testimonial text here.`,
-    role: "Role here",
-    company: "Company here",
-    initials: "XX",
-  },
+
 ];
 
 /* ─── Single card ───────────────────────────────────────────────────────────── */

@@ -18,7 +18,7 @@ export async function POST(request) {
     const { firstName, lastName, email, company, service, multiServices, message } = data;
     
     // For local testing, we send to the configured email or default fallback
-    const toEmail = process.env.CONTACT_FORM_TO_EMAIL || 'hc@htpconsultancy.com';
+    const toEmail = process.env.CONTACT_FORM_TO_EMAIL || 'dimanemer2003@gmail.com';
     
     // Only logged in Resend free accounts can send to their own verified domains or the registered email address.
     // That means 'toEmail' must be the email you used to register Resend (for testing without a domain).

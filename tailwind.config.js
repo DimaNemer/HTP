@@ -26,8 +26,13 @@ module.exports = {
         htpRed: "#cf4227",
       htpRedHover: "#c43318",
       },
+      screens: {
+        md: "1024px",
+      },
     },
+
   },
   plugins: [],
+
 };
 

@@ -81,8 +81,22 @@ const insights = [
       "Published in Computer Weekly's Security Think Tank series a forward-looking piece on what generative AI means for cybersecurity practitioners, and the higher standard organisations should be demanding from AI tools.",
     source: "Computer Weekly",
     cta: "Read Article",
-    href: "https://www.computerweekl.com/opinion/Security-Think-Tank-Expect-more-from-GenAI-in-2024",
+    href: "https://www.computerweekly.com/opinion/Security-Think-Tank-Expect-more-from-GenAI-in-2024",
   },
+
+{
+  type: "Article",
+  typeColor: "bg-emerald-50 text-emerald-700",
+  icon: Newspaper,
+  title: "Trends Driving Cyber Security in 2024",
+  description:
+    "A Computer Weekly deep-dive into the emerging threats and innovations reshaping cyber security from AI-powered attacks to zero-trust architecture and the evolving role of security leadership in modern organisations.",
+  source: "Computer Weekly",
+  cta: "Read Article",
+  href: "https://www.computerweekly.com/feature/Trends-driving-cyber-security-in-2024",
+},
+
+
   {
     type: "Article",
     typeColor: "bg-emerald-50 text-emerald-700",
