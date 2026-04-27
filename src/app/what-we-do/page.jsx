@@ -460,7 +460,7 @@ export default function WhatWeDoPage() {
       <p className="text-textMain text-base md:text-lg leading-relaxed max-w-3xl mx-auto mb-10">
         Want to know more details about the work we produce? Explore one of our
         sample reporting styles to understand how we present risk, insights, and
-        strategic findings in a clear, decision-ready way.
+        strategic findings in a clear, decision ready way.
       </p>
 
       {/* Updated Buttons */}
@@ -485,7 +485,7 @@ export default function WhatWeDoPage() {
       </div>
 
       <p className="text-sm text-textMuted mt-4">
-        Real client-style reporting. Delivered in a clear, board ready format.
+        Real client style reporting. Delivered in a clear, board ready format.
       </p>
     </div>
   </div>
