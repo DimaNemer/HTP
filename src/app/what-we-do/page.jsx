@@ -17,14 +17,14 @@ const services = [
     id: "fractional",
     icon: Briefcase,
     badge: "Fractional Services",
-    title: "Board-ready cyber leadership without the full-time cost.",
+    title: "Board ready cyber leadership without the full-time cost.",
     subtitle: "Fractional CISO & Board Advisory",
     intro:
-      "CISO and Cybersecurity Board advisory roles for organisations that need high-level security leadership and governance, delivered on a part-time, retainer, or project basis, without the overhead of a permanent hire.",
+      "CISO and Cybersecurity Board advisory roles for organisations that need high level security leadership and governance, delivered on a part-time, retainer, or project basis, without the overhead of a permanent hire.",
     whatIsIt:
-      "Think of us as your on-call security executive. Many organisations need senior cybersecurity leadership but can't justify a full-time CISO. Our Fractional CISO service gives you access to board-level security expertise: strategy, governance, risk, and compliance, at a fraction of the cost.",
+      "Think of us as your on call security executive. Many organisations need senior cybersecurity leadership but can't justify a full-time CISO. Our Fractional CISO service gives you access to board level security expertise: strategy, governance, risk, and compliance, at a fraction of the cost.",
     whoIsItFor:
-      "Mid-sized companies, startups scaling up, or firms preparing for compliance audits, fundraising, or public listing, who need strategic security leadership without a permanent hire.",
+      "Mid sized companies, startups scaling up, or firms preparing for compliance audits, fundraising, or public listing, who need strategic security leadership without a permanent hire.",
     howItWorks:
       "We start with a scoping call to understand your needs. We then agree on a retainer or project scope, sign an NDA, and your dedicated advisor starts within days.",
     includes: [
@@ -34,7 +34,7 @@ const services = [
       },
       {
         title: "Board & Executive Reporting",
-        desc: "Translate cyber risk and security posture into board-level insights and dashboards. No jargon.",
+        desc: "Translate cyber risk and security posture into board level insights and dashboards. No jargon.",
       },
       {
         title: "Risk Management & Assessment",
@@ -65,11 +65,11 @@ const services = [
     title: "Find your weaknesses before attackers do.",
     subtitle: "Red Team, Blue & Purple Teaming",
     intro:
-      "Tailored security testing across applications, code, physical systems, and social engineering, delivered by experienced ethical hackers who think and behave like real-world adversaries.",
+      "Tailored security testing across applications, code, physical systems, and social engineering, delivered by experienced ethical hackers who think and behave like real world adversaries.",
     whatIsIt:
       "Security testing means deliberately probing your systems, people, and processes to find vulnerabilities before real attackers do. We use the same tools and mindset as cybercriminals, and we work for you.",
     whoIsItFor:
-      "Any organisation that stores sensitive data, runs customer-facing applications, or operates critical infrastructure. If you haven't tested your defences recently, you don't truly know how secure you are.",
+      "Any organisation that stores sensitive data, runs customer facing applications, or operates critical infrastructure. If you haven't tested your defences recently, you don't truly know how secure you are.",
     howItWorks:
       "We agree on scope and rules of engagement, sign an NDA, then conduct a structured engagement covering offensive testing, defensive analysis, or both. You receive a clear, actionable report with prioritised findings.",
     includes: [
@@ -124,7 +124,7 @@ const services = [
       },
       {
         title: "Governance & Compliance Alignment",
-        desc: "Implement frameworks like NIST CSF V.2, ISO 27001, SOC 2, and industry-specific regulations required by investors and regulators.",
+        desc: "Implement frameworks like NIST CSF V.2, ISO 27001, SOC 2, and industry specific regulations required by investors and regulators.",
       },
       {
         title: "Incident Response & Crisis Management",
@@ -161,9 +161,9 @@ const services = [
     intro:
       "Whether you run an app, small business, eCommerce website, or FTSE 250, all businesses need to minimise their legal liability and risk. We make compliance clear, manageable, and tailored to your world.",
     whatIsIt:
-      "Compliance and risk mitigation means knowing exactly what regulations apply to your business, building the policies and controls to meet them, and having a trusted advisor help you stay ahead of an ever-changing regulatory landscape.",
+      "Compliance and risk mitigation means knowing exactly what regulations apply to your business, building the policies and controls to meet them, and having a trusted advisor help you stay ahead of an ever changing regulatory landscape.",
     whoIsItFor:
-      "Any business handling customer data, financial transactions, or operating in regulated industries, from early-stage startups navigating GDPR for the first time, to established enterprises preparing for ISO 27001 certification.",
+      "Any business handling customer data, financial transactions, or operating in regulated industries, from early stage startups navigating GDPR for the first time, to established enterprises preparing for ISO 27001 certification.",
     howItWorks:
       "We assess your current compliance posture, identify gaps against relevant frameworks, build a tailored risk management plan complete with policies and due diligence, and support you through audits and certifications.",
     includes: [
@@ -181,7 +181,7 @@ const services = [
       },
       {
         title: "Third-Party & Vendor Risk Management",
-        desc: "Assess and mitigate supply chain and vendor security risks, including geopolitical, emerging, and sector-specific risks.",
+        desc: "Assess and mitigate supply chain and vendor security risks, including geopolitical, emerging, and sector specific risks.",
       },
       {
         title: "AI & Emerging Tech Risk",
@@ -434,45 +434,62 @@ export default function WhatWeDoPage() {
 </section>
 
       {/* 3. Our Work — BEFORE services */}
-      <section className="py-20 md:py-24 bg-white">
-        <div className="max-w-5xl mx-auto px-6 md:px-10 lg:px-12 text-center">
-          <div className="bg-secondary border border-borderLight rounded-3xl px-8 py-14 md:px-12 md:py-16 shadow-[0_20px_60px_rgba(11,31,58,0.08)]">
-            <div className="p-4 bg-accent/10 rounded-2xl w-fit mx-auto mb-6">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-7 h-7 text-htpRed"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 7h10M7 11h10M7 15h6" />
-              </svg>
-            </div>
-            <p className="text-2xl font-bold text-htpRed tracking-[0.22em] uppercase mb-4">
-              Our Work
-            </p>
-            <h2 className="text-2xl md:text-4xl font-semibold text-primary mb-6">
-              See the depth behind our work.
-            </h2>
-            <p className="text-textMain text-base md:text-lg leading-relaxed max-w-3xl mx-auto mb-10">
-              Want to know more details about the work we produce? Explore one of our
-              sample reporting styles to understand how we present risk, insights, and
-              strategic findings in a clear, decision-ready way.
-            </p>
-            <a
-              href="https://static1.squarespace.com/static/61598a827c12262d11d6f93c/t/67e1ac0c04bec05dfce20f7e/1744539311928/HTP+Consultancy+-+Sample+Report+V1.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center bg-cta hover:bg-ctaHover text-white font-bold px-8 py-4 rounded-lg transition-all duration-300 shadow-[0_4px_14px_rgba(255,42,0,0.25)] hover:shadow-[0_8px_24px_rgba(255,42,0,0.35)] hover:-translate-y-0.5 hover:scale-[1.03]"
-            >
-              View Sample Report
-            </a>
-            <p className="text-sm text-textMuted mt-4">
-              Real client-style reporting. Delivered in a clear, board-ready format.
-            </p>
-          </div>
-        </div>
-      </section>
+    <section className="py-20 md:py-24 bg-white">
+  <div className="max-w-5xl mx-auto px-6 md:px-10 lg:px-12 text-center">
+    <div className="bg-secondary border border-borderLight rounded-3xl px-8 py-14 md:px-12 md:py-16 shadow-[0_20px_60px_rgba(11,31,58,0.08)]">
+      <div className="p-4 bg-accent/10 rounded-2xl w-fit mx-auto mb-6">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-7 h-7 text-htpRed"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 7h10M7 11h10M7 15h6" />
+        </svg>
+      </div>
+
+      <p className="text-2xl font-bold text-htpRed tracking-[0.22em] uppercase mb-4">
+        Our Work
+      </p>
+
+      <h2 className="text-2xl md:text-4xl font-semibold text-primary mb-6">
+        See the depth behind our work.
+      </h2>
+
+      <p className="text-textMain text-base md:text-lg leading-relaxed max-w-3xl mx-auto mb-10">
+        Want to know more details about the work we produce? Explore one of our
+        sample reporting styles to understand how we present risk, insights, and
+        strategic findings in a clear, decision-ready way.
+      </p>
+
+      {/* Updated Buttons */}
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+        <a
+          href="https://static1.squarespace.com/static/61598a827c12262d11d6f93c/t/67e1ac0c04bec05dfce20f7e/1744539311928/HTP+Consultancy+-+Sample+Report+V1.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center bg-cta hover:bg-ctaHover text-white font-bold px-8 py-4 rounded-lg transition-all duration-300 shadow-[0_4px_14px_rgba(255,42,0,0.25)] hover:shadow-[0_8px_24px_rgba(255,42,0,0.35)] hover:-translate-y-0.5 hover:scale-[1.03]"
+        >
+          View Sample Report
+        </a>
+
+        <a
+          href="AI_Framework_Concise.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center border-2 border-cta text-cta font-bold px-8 py-4 rounded-lg transition-all duration-300 hover:bg-cta hover:text-white"
+        >
+          View Sample Report 2
+        </a>
+      </div>
+
+      <p className="text-sm text-textMuted mt-4">
+        Real client-style reporting. Delivered in a clear, board ready format.
+      </p>
+    </div>
+  </div>
+</section>
 
       {/* 4. Sticky Service Nav */}
       <ServiceNav />
